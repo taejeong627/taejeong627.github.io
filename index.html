@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taejeong's Portfolio</title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="images/xowjddlsla_face.jpg">
+
+    <!-- base.css -->
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--폰트어썸 / 폰트-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kreon:wght@300;400;500;515;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Patua+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--제이쿼리-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--미디어쿼리-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="css/m_mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:701px) and (max-width: 1100px)" href="css/m_tab.css"> -->
+
+    <!-- 폰트 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Lobster&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Oooh+Baby&family=Oxygen:wght@300;400;700&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <div id="root">
+        <header class="header-pc">
+            <div class="header-wrap">
+                <h1 class="logo">
+                    <a href="#">Taejeong's Website</a>
+                    <p>Design is thinking made visual. </p>
+                </h1>
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            <span class="myIcon"></span>
+                            <p>About Me</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="portfolioIcon"></span>
+                            <p>Portfolio</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.notion.so/55166c5992e84ef3b6d6058ccfb5c1ab?v=4a7bb4519d7b41e99ffb1b5c1bc600cb">
+                            <span class="studyIcon"></span>
+                            <p>Study</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <header class="header-mobile">
+            <button class="hamburger-btn"><span class="icon-hamburger icon-filter-white"></span></button>
+        </header>
+        <aside>
+            <div class="aside-wrap">
+                <div class="update-box">
+                    <strong>2020.08.09</strong><p>Last update </p>
+                </div>
+                <div class="address-box">
+                    <span class="icon-mail opacity-07"></span> xowjddlsla@gmail.com
+                </div>
+            </div>
+        </aside>
+        <section class="intro scrollTopUp">
+            <div class="scroll-box">
+                <div class="scrollIcon">
+                    <div class="scrolling"></div>
+                </div>
+            </div>
+            <div class="phone-box">
+                <div class="phone-screen-box">
+                    <div class="phone-screen">
+                        <div class="typing-box">
+                            <div class="typing-txt">
+                                <ul>
+                                    <li>Taejeong's Portfolio Website!</li>
+                                    <li>I belive so many chances to make beautiful design together.</li>
+                                    <li>Oh, Hey!</li>
+                                    <li>Wanna join my team?</li>
+                                </ul>
+                            </div>
+                            <p class="typing"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content scrollTopUp">
+            <div id="rocket">
+                <div class="rocket-head">
+                    <div class="head"></div>
+                    <div class="window-wrap">
+                        <p>Welcome</p>
+                        <div class="window"></div>
+                        <p>곽태정</p>
+                        <p>UI UX Designer / Publisher</p>
+                        <p>취미 : 사이드프로젝트 하기</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minus nemo veniam aspernatur, aut iure eius excepturi, alias illum dolores velit ad tenetur officia vitae unde explicabo quisquam assumenda qui.</p>
+                    </div>
+                </div>
+                <div class="rocket-body">
+                    <ul class="p_menu">
+                        <li class="on"><a href="#">Publishing</a></li>
+                        <li><a href="#">UI UX</a></li>
+                        <li><a href="#">Interaction</a></li>
+                        <li><a href="#">3D / Ect</a></li>
+                    </ul>
+                    <div class="p_list">
+                        <!-- 퍼블리싱 -->
+                        <ul class="on">
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img1 img">
+                                            <a class="more" href="./site/29cm_taejeongKwak/index.html">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Clone Coding</h4>
+                                    <h3>29CM</h3>
+                                    <p>반응형 웹사이트 / 바닐라 자바스크립트 / 일부 Jquery 사용 (slick슬라이드) 기능이 구현 된 쇼핑몰 웹사이트 카피.</p>
+                                    <p>개발기간 :</p>
+                                    <p>[20days] 2020.07.20 </p>
+                                    <div class="page-btn">
+                                        <a href="site/29cm_taejeongKwak/sub.html">서브페이지1 </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img4 img">
+                                            <a class="more" href="./site/naver/index.html">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Clone Coding</h4>
+                                    <h3>네이버 Corp</h3>
+                                    <p>반응형 웹사이트 / 바닐라 자바스크립트 / 일부 Jquery 사용 (slick슬라이드) 기능이 구현 된 네이버 홈페이지 카피사이트</p>
+                                    <p>개발기간 :</p>
+                                    <p>[1month] 2020.07.01 </p>
+                                    <div class="page-btn">
+                                        <a href="site/naver/company.html">서브페이지1</a>
+                                        <a href="site/naver/contact.html">서브페이지2</a>
+                                        <a href="site/naver/projectFlower.html">서브페이지3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img2 img">
+                                            <a class="more" href="./site/kakaoBank/main.html">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Clone Coding</h4>
+                                    <h3>카카오 뱅크</h3>
+                                    <p>애니메이션 / 바닐라 자바스크립트 / 일부 Jquery 사용 (slick슬라이드) 기능이 구현 된 카카오뱅크 카피사이트</p>
+                                    <p>개발기간 :</p>
+                                    <p>[1month] 2020.06.01 </p>
+                                    <div class="page-btn">
+                                        <a href="site/kakaoBank/about.html">서브페이지1</a>
+                                        <a href="site/kakaoBank/customer.html">서브페이지2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img3 img">
+                                            <a class="more" href="./site/kakaocorp/main.html">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Clone Coding</h4>
+                                    <h3>카카오 Corp</h3>
+                                    <p>바닐라 자바스크립트 / 일부 Jquery 사용 (slick슬라이드) 기능이 구현 된 카카오 홈페이지 카피사이트</p>
+                                    <p>개발기간 :</p>
+                                    <p>[1week] 2020.05.15 </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img5 img">
+                                            <a class="more" href="./site/ed_copy/ed.html">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Clone Coding</h4>
+                                    <h3>EARLY ADOPTER</h3>
+                                    <p>반응형 웹사이트 / 바닐라 자바스크립트 / 일부 Jquery 사용 (slick슬라이드) 기능이 구현 된 뉴스 + 쇼핑몰 웹사이트 카피.</p>
+                                    <p>개발기간 :</p>
+                                    <p>[1week] 2020.05.15 </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- uiux -->
+                        <ul>
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img6 img">
+                                            <a class="more modal" href="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Team Project</h4>
+                                    <h3>마이칵테일</h3>
+                                    <p>칵테일 재료를 관리하고 레시피를 조합해서 서로 공유할수 있는, 홈바가 필요한 유저들을 위한 칵테일 App</p>
+                                    <p>개발기간 :</p>
+                                    <p>[6month] 2022.06.30 </p>
+                                </div>
+                                <div class="page-more hidden">
+                                    <div class="more-wrap">
+                                        <div class="more-close">
+                                            <button class="more-close-btn">close
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="more-img">
+                                            <img src="images/portfolio/p14.png" alt="">
+                                            <img src="images/portfolio/p15.png" alt="">
+                                            <img src="images/portfolio/p16.png" alt="">
+                                            <img src="images/portfolio/p17.png" alt="">
+                                            <img src="images/portfolio/p18.png" alt="">
+                                            <img src="images/portfolio/p19.png" alt="">
+                                            <img src="images/portfolio/p20.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img6 img">
+                                            <a class="more modal" href="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Personal Project</h4>
+                                    <h3>디자인 스타일가이드</h3>
+                                    <p>피그마 컴포넌트 제작 후, 컴포넌트를 퍼블리싱 파일로 변환 한 스타일 가이드
+                                    </p>
+                                    <p>개발기간 :</p>
+                                    <p>[4month] 2021.12.20 </p>
+                                </div>
+                                <div class="page-more hidden">
+                                    <div class="more-wrap">
+                                        <div class="more-close">
+                                            <button class="more-close-btn">close
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="more-img">
+                                            <img src="images/portfolio/p14.png" alt="">
+                                            <img src="images/portfolio/p15.png" alt="">
+                                            <img src="images/portfolio/p16.png" alt="">
+                                            <img src="images/portfolio/p17.png" alt="">
+                                            <img src="images/portfolio/p18.png" alt="">
+                                            <img src="images/portfolio/p19.png" alt="">
+                                            <img src="images/portfolio/p20.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img6 img">
+                                            <a class="more modal" href="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Graduation Project</h4>
+                                    <h3>킵고잉</h3>
+                                    <p>하루 15시간을 앉아서 지내는 너 나 그리고 우리의 하루. 운동이 필요한 현대인들을 위해, 걸음으로 음악을 재생시키는 워킹뮤직 어플리케이션 ‘킵고잉(Keepgoing)’을 소개합니다.
+                                    </p>
+                                    <p>개발기간 :</p>
+                                    <p>[1year] 2018.12.15 </p>
+                                </div>
+                                <div class="page-more hidden">
+                                    <div class="more-wrap">
+                                        <div class="more-close">
+                                            <button class="more-close-btn">close
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="more-img">
+                                            <img src="images/portfolio/p14.png" alt="">
+                                            <img src="images/portfolio/p15.png" alt="">
+                                            <img src="images/portfolio/p16.png" alt="">
+                                            <img src="images/portfolio/p17.png" alt="">
+                                            <img src="images/portfolio/p18.png" alt="">
+                                            <img src="images/portfolio/p19.png" alt="">
+                                            <img src="images/portfolio/p20.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img7 img">
+                                            <a class="more modal" href="#">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Personal Project</h4>
+                                    <h3>티봇</h3>
+                                    <p>매일 해야하지만 귀찮고 까먹기 쉬운 양치질. 우리아이는 스스로 이빨을 잘 닦고 있나요? 매일 챙겨주기 힘든 부모님과 스스로하는 양치질에 재미를 붙이고 싶은 아이, 가족구성원 모두를 위해 디자인했습니다.
+                                    </p>
+                                    <p>개발기간 :</p>
+                                    <p>[1month] 2019.08.15 </p>
+                                </div>
+                                <div class="page-more hidden">
+                                    <div class="more-wrap">
+                                        <div class="more-close">
+                                            <button class="more-close-btn">close
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="more-img">
+                                            <img src="images/portfolio/p21.png" alt="">
+                                            <img src="images/portfolio/p22.png" alt="">
+                                            <img src="images/portfolio/p23.png" alt="">
+                                            <img src="images/portfolio/p24.png" alt="">
+                                            <img src="images/portfolio/p25.png" alt="">
+                                            <img src="images/portfolio/p26.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img8 img">
+                                            <a class="more modal" href="#">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Re design</h4>
+                                    <h3>TOMS</h3>
+                                    <p>TOMS는 기부문화의 아이콘이기에 기아와 난민같은 무거운 이미지가 먼저 떠오릅니다. 누구나 쉽게 참여할 수 있도록 경쾌한 톤앤매너로 TOMS의 웹페이지를 밝고 경쾌하게 리디자인 했습니다.
+                                    </p>
+                                    <p>개발기간 :</p>
+                                    <p>[1month] 2019.07.15 </p>
+                                </div>
+                                <div class="page-more hidden">
+                                    <div class="more-wrap">
+                                        <div class="more-close">
+                                            <button class="more-close-btn">close
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="more-img">
+                                            <img src="images/portfolio/p27.png" alt="">
+                                            <img src="images/portfolio/p28.png" alt="">
+                                            <img src="images/portfolio/p29.png" alt="">
+                                            <img src="images/portfolio/p30.png" alt="">
+                                            <img src="images/portfolio/p31.png" alt="">
+                                            <img src="images/portfolio/p32.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 인터렉션 -->
+                        <ul>
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img9 img">
+                                            <a class="more modal" href="#">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Freelancer Work</h4>
+                                    <h3>이야기의 얼굴</h3>
+                                    <p> 심장박동, 시선, 긴장도등 몸에 부착한 센서의 데이터를 모아 아름다운 심해영상으로 보여드립니다. 의사소통에 어려움을 겪는 조현병 환자들을 위해 디자인했습니다.
+                                    </p>
+                                    <p>개발기간 : 2018.07.01 ~ 2018.09.30</p>
+                                </div>
+                                <div class="page-more hidden">
+                                    <div class="more-wrap">
+                                        <div class="more-close">
+                                            <button class="more-close-btn">close
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="more-img">
+                                            <img src="images/portfolio/p5.png" alt="">
+                                            <img src="images/portfolio/p6.png" alt="">
+                                            <img src="images/portfolio/p7.png" alt="">
+                                            <img src="images/portfolio/p8.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="page-pic">
+                                    <div class="portImg">
+                                        <div class="img10 img">
+                                            <a class="more modal" href="#">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-info">
+                                    <h4>Personal Exhibition</h4>
+                                    <h3>버그버그</h3>
+                                    <p>가상의 공간 속에 등장하는 데이터의 홍수, 텍스트파일 더미를 피해 다니는 술래잡기 형식의 미디어 게임입니다. 키넥트, 빔프로젝터를 활용하여 제작한 게임아트를 관객이 상호작용하면서 체험할 수 있습니다.
+                                    </p>
+                                    <p>개발기간 : 2019.05.04 ~ 2019.07.20</p>
+                                </div>
+                                <div class="page-more hidden">
+                                    <div class="more-wrap">
+                                        <div class="more-close">
+                                            <button class="more-close-btn">close
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="more-img">
+                                            <img src="images/portfolio/p9.png" alt="">
+                                            <img src="images/portfolio/p10.png" alt="">
+                                            <img src="images/portfolio/p11.png" alt="">
+                                            <img src="images/portfolio/p12.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 3D -->
+                        <ul>
+                            <li>업데이트 중입니다. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rocket-end"></div>
+            </div>
+            <div class="rocket-tail"></div>
+            <div class="rocket-tail-front"></div>
+        </section>
+        <section class="goodbye">
+            <div class="cont-wrap">
+                <h3>xowjddlsla@gmail.com</h3>
+                <p>이메일은 언제나 환영입니다:)</p>
+                <p>메일을 주시면 평일기준 2일 이내로 답장드립니다.<br>감사합니다</p>
+            </div>
+        </section>
+        <div class="back">
+            <div class="clouds">
+                <div class="left">
+                    <div class="img-cloud-1 size-s"></div>
+                    <div class="img-cloud-1 size-m"></div>
+                    <div class="img-cloud-1 size-l"></div>
+                </div>
+                <div class="right">
+                    <div class="img-cloud-2 size-s"></div>
+                    <div class="img-cloud-2 size-l"></div>
+                    <div class="img-cloud-2 size-m"></div>
+                </div>
+            </div>
+            <div class="stars">
+                <div class="star s-1"></div>
+                <div class="star s-2"></div>
+                <div class="star s-3"></div>
+                <div class="star s-4"></div>
+                <div class="star s-5"></div>
+                <div class="star s-6"></div>
+                <div class="star s-7"></div>
+                <div class="star s-8"></div>
+                <div class="star s-9"></div>
+                <div class="star s-10"></div>
+                <div class="star s-11"></div>
+                <div class="star s-12"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const html = document.querySelector('html');
+        const headerSec = document.querySelector('header');
+        const introSec = document.querySelector('.intro');
+        const contSec = document.querySelector('.content');
+        const byeSec = document.querySelector('.goodbye');
+
+        var old = html.scrollTop;
+
+        
+
+        
+        //새로고침시 맨 위로
+        $(document).ready(function(){
+            setTimeout(function(){
+                $('html, body').scrollTop(0);
+            }, 100);
+        });
+
+        //스크롤 애니메이션
+        window.addEventListener('scroll', scrollWork);
+        function scrollWork(e) {
+            e.preventDefault();
+            //콘트쪽으로 스크롤 내렸을때
+            if (html.scrollTop > 80 && old < html.scrollTop && html.scrollTop < 500) {
+                introSec.className = 'intro scrollTopDown';
+                contSec.className = 'content scrollTopDown';
+                byeSec.classList.remove('on');
+                $('.clouds').addClass('moveOut');
+            }
+            //인트로쪽으로 스크롤 올렸을때
+            else if (html.scrollTop < 80 && old > html.scrollTop) {
+                introSec.className = 'intro scrollTopUp';
+                contSec.className = 'content scrollTopUp';
+                byeSec.classList.remove('on');
+                $('.clouds').removeClass('moveOut');
+            }
+
+            //푸터쪽으로 스크롤 내렸을때
+            else if (html.scrollTop + 950 > contSec.scrollHeight && old < html.scrollTop) {
+                contSec.className = 'content scrollBottomDown';
+                byeSec.classList.add('on');
+                $('.clouds').removeClass('moveOut');
+            }
+            //콘트쪽으로 스크롤 올렸을때
+            else if(html.scrollTop + 950 > contSec.scrollHeight && old > html.scrollTop) {
+                contSec.className = 'content scrollBottomUp';
+                byeSec.classList.remove('on');
+                $('.clouds').addClass('moveOut');
+            }
+            old = html.scrollTop;
+        }
+
+
+        /////////////////////////////////
+        //////////클릭, 스크롤 기능////////
+        /////////////////////////////////
+
+
+        //포트폴리오 - 선택한 메뉴에 on붙이는 기능
+        var menuBtn = document.querySelector('.p_menu');
+        var menuBox = document.querySelectorAll('.p_menu li')
+        var listBox = document.querySelectorAll('.p_list ul');
+
+        menuBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('메뉴 눌렀다');
+            console.log(e);
+            for (let i = 0; i < menuBox.length; i++) {
+                menuBox[i].classList.remove('on');
+                listBox[i].classList.remove('on');
+                menuBox[i].array = i;
+            }
+            var clicked = e.target.parentElement;
+            clicked.classList.add('on');
+            listBox[clicked.array].classList.add('on');
+        })
+
+
+        // //포트폴리오 - more 버튼
+        // var moreBtns = document.querySelectorAll('.modal');
+        // var moreCloseBtns = document.querySelectorAll('.more-close-btn');
+        // var moreSecs = document.querySelectorAll('.page-more');
+
+        // for (let i = 0; i < moreBtns.length; i++) {
+        //     moreBtns[i].addEventListener('click', function(e) {
+        //         e.preventDefault();
+        //         moreSecs[i].classList.remove('hidden');
+        //         headerSec.classList.add('hidden');
+        //     })
+        //     moreCloseBtns[i].addEventListener('click', function(e) {
+        //         e.preventDefault();
+        //         moreSecs[i].classList.add('hidden');
+        //         headerSec.classList.remove('hidden');
+        //     })
+        // }
+
+
+        //인트로 - 글자 써지는 효과
+        var typingBool = false;
+        var typingIdx = 0;
+        var liIndex = 0;
+        var liLength = $(".typing-txt>ul>li").length;
+        var screen = document.querySelector('.phone-screen');
+        var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); // 타이핑될 텍스트를 가져온다 
+        typingTxt = typingTxt.split(""); // 한글자씩 자른다.   
+
+        if (typingBool == false) { // 타이핑이 진행되지 않았다면 
+            typingBool = true;
+            //var tyInt = setInterval(typing,100);
+            var tyInt;
+            clearInterval(tyInt);
+            setTimeout(function() {
+                //화면이 켜지기전까지 3.3초 쉬고 시작한다.
+                tyInt = setInterval(typing, 80)
+            }, 3300);
+        }
+
+        function typing() {
+            $(".typing").removeClass('end');//커서를 감춘다
+
+            if (typingIdx < typingTxt.length) { // 타이핑될 텍스트 길이만큼 반복 
+                $(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
+                typingIdx++;
+            } else { //한문장이끝나면
+                //다음문장으로.. 마지막문장이면 다시 첫번째 문장으로 
+                if (liIndex >= liLength - 1) {
+                    liIndex = 0;
+                } else {
+                    liIndex++;
+                }
+                //다음문장을 타이핑하기위한 셋팅
+                typingIdx = 0;
+                typingBool = false;
+                typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
+                clearInterval(tyInt);
+                $(".typing").addClass('end'); //문장이 끝나면 커서효과를 킨다
+
+                //다음문장 타이핑전 2초 쉰다
+                setTimeout(function() {
+                    $(".typing").html('');
+                    tyInt = setInterval(typing, 80);
+                }, 2000);
+            }
+        }
+    
+    
+    </script>
+</body></html>

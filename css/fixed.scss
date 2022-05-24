@@ -1,0 +1,197 @@
+//////////////////////////////
+/* Css link*/
+@import 'font';
+@import '_variables';
+@import 'tools';
+
+header{
+    &.header-pc{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 85%;
+        z-index: 100;
+        &.hidden{
+            z-index: -1;
+        }
+        & .header-wrap{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 30%;
+            & .logo{
+                display: inline-block;
+                & a{
+                    color: white;
+                    font-family: 'Lobster', cursive;
+                    font-weight: 100;
+                    font-size: 2rem;
+                    line-height: 1.2;
+                    transition: all .3s;
+                }
+                & p{
+                    color: white;
+                    opacity: .7;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    white-space: nowrap;
+                    margin-top: 10px;
+                }
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 5px;
+                    border-radius: $form-radius;
+                    background: white;
+                    margin-top: 10px;
+                    
+                    transform: scaleX(.05);
+                    transform-origin: 0 0;
+                    -webkit-transform: scaleX(0.05);
+                    -webkit-transform-origin: 0 0;
+                    transition: all .3s;
+                }
+                &:hover{
+                    &::after{
+                        transform: scaleX(1);
+                        background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+                    }
+                    & a{
+                        text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+            & .menu{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                gap: 2.5rem;
+                
+                transition: all 1.5s;
+    
+                & li{
+                    width: 72px;
+                    height: 72px;
+                    border-radius: $form-radius;
+                    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.2) 100%);
+                    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.2);
+                    transition: all .3s;
+                    & a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        & span{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            background-image: url(../images/menu.png);
+                            filter: invert(1);
+                            transform: scale(.7) translateX(-5%) translateY(-5%);
+                            &.myIcon{
+                                background-position: 0px 5px;
+                            }
+                            &.portfolioIcon{
+                                background-position: -87px 3px;
+                            }
+                            &.studyIcon{
+                                background-position: -176px 0px;
+                            }
+                        }
+                        & p{
+                            color: white;
+                            font-size: 0.8rem;
+                            font-weight: 400;
+                            margin-top: .5rem;
+                        }
+                    }
+                    &:hover{
+                        background-color: #00b1ff;
+                    }
+                    
+                }
+            }
+
+        }
+    }
+    &.header-mobile{
+        & .hamburger-btn{
+            display: inline-block;
+            position: relative;
+            background-color: transparent;
+            transition: $form-transition;
+            padding: 2px;
+            padding-bottom: 0;
+            transform: scale(2);
+            border: none !important;
+            &:hover, .on{
+                cursor: pointer;
+                filter: invert(.3);
+                transition: $form-transition;
+            }
+        }
+    }
+}
+
+aside{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 85%;
+    right: 0;
+    & .aside-wrap{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 30%;
+        padding-left: 0;
+        box-sizing: border-box;
+    }
+    & .update-box{
+        border-radius: $form-radius;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+        & *{color: white;}
+        & p{
+            @include p4-l(); opacity: .7;
+        }
+        & strong{
+            @include p2-b();
+        }
+    }
+    & .address-box{
+        background-color: white;
+        box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.2);
+        border-radius: $form-radius;
+        padding: 20px 25px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        @include p2-b();
+        & p{@include p4-n(); opacity: .6;}
+    }
+}
+@media (min-width:$breakpoint-desktop){
+    .header-pc{display: block;}
+    .header-mobile{display: none;}
+    aside{display: block;}
+}
+@media (max-width:$breakpoint-desktop){
+    .header-pc{display: none;}
+    .header-mobile{display: block;}
+    aside{display: none !important;}
+}

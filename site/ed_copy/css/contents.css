@@ -1,0 +1,299 @@
+/* contents */
+#contents{
+    background-color: rgb(240,240,250);
+    border-top: 1px solid lightgray;
+    width: 100%;
+    overflow: hidden;
+}
+.contents-wrap{
+    max-width: 1080px;
+    margin: 0 auto;
+    
+}
+/* contents - banner-pc*/
+
+.banner-pc{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    max-width: 1080px;
+    height: 500px;
+    border: 1px solid lightgray;
+}
+.banner-slider{
+}
+.banner-list{
+    font-size: 0;
+    height: 500px;
+    display: flex;
+}
+.banner-list .img-box{
+    display: block;
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.banner-list .txt-box{
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.banner-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.b-img-1{
+     background-image: url(../images/Galaxy-Z-Fold-2-breaks-pre-order-records-in-Samsung-home-market-despite-its-.jpg);
+}
+.b-img-2{
+     background-image: url(../images/hometv.jpg);
+}
+.b-img-3{
+     background-image: url(../images/audi-first-production-animated-digital-matrix-1.jpg);
+}
+.b-img-4{
+     background-image: url(../images/samsung-galaxy-z-flip-mirror-gold-1.jpg);
+}
+.b-img-5{
+     background-image: url(../images/gkp-g1.jpg);
+}
+
+
+
+ul.hashtags{
+    display: block;
+}
+li.hashtag{
+    display: inline-block;
+    margin: 0 5px 5px 0;
+}
+.hashtag > a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    background-color: #fff7f8;
+    color: #e58d00;
+    letter-spacing: -1px;
+}
+.hashtag > a:hover{
+    background-color: white;
+}
+
+
+
+
+
+/*contents - News */
+.news-pc{
+    margin-bottom: 70px;
+}
+
+.cont-title {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.news-pc .cont-column{
+    max-width: 1080px;
+    column-count: 4;
+    column-gap: 15px;
+    font-size: 0;
+    column-width: 200px;
+}
+.cont-column>figure{
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.cont-column figure img{
+    width: 100%;
+}
+
+.news-pc figcaption{
+    padding: 20px 10px 0;
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn{
+    width: 105px;
+    height: 35px;
+    border: 1px solid gray;
+    background-color: #fff;
+    color: gray;
+}
+
+.btn:hover{
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+}
+
+
+
+
+
+/*contents - Review */
+.review-pc{
+    margin-bottom: 70px;
+}
+
+.review-pc .cont-column{
+    max-width: 1080px;
+    column-count: 4;
+    column-gap: 15px;
+    font-size: 0;
+    column-width: 200px;
+}
+
+.review-pc figcaption{
+    padding: 20px 10px 0;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.cont-more{
+    margin-top: 20px;
+   text-align: center;
+}
+
+.right{
+    display: inline-flex;
+    position: absolute;
+    left: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-follow{
+    width: 130px;
+    height: 50px;
+    border: 1px solid gray;
+    background-color: #fff;
+    color: gray;
+}
+
+.btn-follow:hover{
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+}
+
+
+
+
+
+
+
+/*contents - insta */
+
+.insta-pc{
+    margin-bottom: 70px;
+}
+.insta-pc .cont-box{
+    max-width: 1080px;
+}
+.insta-pc .cont-box ul{
+    font-size: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.insta-pc .cont-box ul li{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    padding: 5px;
+    
+    box-sizing: border-box;
+}
+
+.insta-item{
+    display: block;
+    position: relative;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100%;
+}
+
+.effect-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(255,255,255,0.3);
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    
+    opacity: 0;
+}
+.effect-box::after{
+    content: '';
+    display: block;
+    width: 90%;
+    height: 90%;
+    border: 1px solid white;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.insta-item:hover .effect-box{
+    opacity: 1;
+    transition: all .3s;
+}
+
+
+
+
+
+
+.img-1{
+    background-image: url(../images/1.jpg);
+}
+.img-2{
+    background-image: url(../images/2.jpg);
+    
+}
+.img-3{
+    background-image: url(../images/3.jpg);
+}
+.img-4{
+    background-image: url(../images/4.jpg);
+}
+.img-5{
+    background-image: url(../images/5.jpg);
+}
+.img-6{
+    background-image: url(../images/6.jpg);
+}
+.img-7{
+    background-image: url(../images/7.jpg);
+}
+.img-8{
+    background-image: url(../images/8.jpg);
+}
+.img-9{
+    background-image: url(../images/9.jpg);
+}
+.img-10{
+    background-image: url(../images/10.jpg);
+}
+
+
+
+
+
