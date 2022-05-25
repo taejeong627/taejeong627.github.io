@@ -947,25 +947,53 @@
 #root .back .clouds .left {
   position: absolute;
   left: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 #root .back .clouds .right {
   position: absolute;
   right: 0;
+}
+
+#root .back .clouds.moveOut .right .size-s {
+  -webkit-transform: translateX(70rem);
+          transform: translateX(70rem);
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-#root .back .clouds.moveOut .left {
-  -webkit-transform: translateX(-70rem);
-          transform: translateX(-70rem);
-}
-
-#root .back .clouds.moveOut .right {
+#root .back .clouds.moveOut .right .size-m {
   -webkit-transform: translateX(70rem);
           transform: translateX(70rem);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#root .back .clouds.moveOut .right .size-l {
+  -webkit-transform: translateX(70rem);
+          transform: translateX(70rem);
+  -webkit-transition: all 1.3s;
+  transition: all 1.3s;
+}
+
+#root .back .clouds.moveOut .left .size-s {
+  -webkit-transform: translateX(-70rem);
+          transform: translateX(-70rem);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#root .back .clouds.moveOut .left .size-m {
+  -webkit-transform: translateX(-70rem);
+          transform: translateX(-70rem);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#root .back .clouds.moveOut .left .size-l {
+  -webkit-transform: translateX(-70rem);
+          transform: translateX(-70rem);
+  -webkit-transition: all 1.3s;
+  transition: all 1.3s;
 }
 
 #root .back .clouds .img-cloud-1 {
@@ -978,10 +1006,13 @@
 }
 
 #root .back .clouds .img-cloud-1.size-s {
+  bottom: -3rem;
   left: 3rem;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.8) scaleX(-1);
+          transform: scale(0.8) scaleX(-1);
   opacity: .5;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #root .back .clouds .img-cloud-1.size-m {
@@ -989,6 +1020,8 @@
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   opacity: .2;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 #root .back .clouds .img-cloud-1.size-l {
@@ -996,6 +1029,8 @@
   -webkit-transform: scale(2.2);
           transform: scale(2.2);
   opacity: .2;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
 }
 
 #root .back .clouds .img-cloud-2 {
@@ -1014,6 +1049,8 @@
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   opacity: .3;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #root .back .clouds .img-cloud-2.size-l {
@@ -1022,6 +1059,8 @@
   -webkit-transform: scale(2);
           transform: scale(2);
   opacity: .2;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 #root .back .clouds .img-cloud-2.size-m {
@@ -1030,6 +1069,8 @@
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   opacity: .2;
+  -webkit-transition: all 1.6s;
+  transition: all 1.6s;
 }
 
 #root .back .img-planet {

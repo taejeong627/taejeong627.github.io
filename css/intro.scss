@@ -278,16 +278,26 @@
             & .left{
                 position: absolute;
                 left: 0;
-                transition: all 1s;
+                // transition: all 1s;
             }
             & .right{
                 position: absolute;
                 right: 0;
-                transition: all 1s;
+                // transition: all 1s;
             }
             &.moveOut{
-                & .left{ transform: translateX(-70rem); }
-                & .right{ transform: translateX(70rem); }
+                // & .left{ transform: translateX(-70rem); }
+                // & .right{ transform: translateX(70rem); }
+                & .right{
+                    & .size-s{transform: translateX(70rem); transition: all 1s;}
+                    & .size-m{transform: translateX(70rem); transition: all .5s;}
+                    & .size-l{transform: translateX(70rem); transition: all 1.3s;}
+                }
+                & .left{
+                    & .size-s{transform: translateX(-70rem); transition: all 1s;}
+                    & .size-m{transform: translateX(-70rem); transition: all .5s;}
+                    & .size-l{transform: translateX(-70rem); transition: all 1.3s;}
+                }
             }
             & .img-cloud-1{
                 bottom: 0;
@@ -297,19 +307,23 @@
                 background: url('../images/cloud_1.png');
                 background-size: cover;
                 &.size-s{
+                    bottom: -3rem;
                     left: 3rem;
-                    transform: scale(.8);
+                    transform: scale(.8) scaleX(-1);
                     opacity: .5;
+                    transition: all 1s;
                 }
                 &.size-m{
                     left: 8rem;
                     transform: scale(1.5);
                     opacity: .2;
+                    transition: all .5s
                 }
                 &.size-l{
                     left: 2rem;
                     transform: scale(2.2);
                     opacity: .2;
+                    transition: all 1.2s;
                 }
             }
             & .img-cloud-2{
@@ -324,46 +338,23 @@
                     right: 10rem;
                     transform: scale(1.1);
                     opacity: .3;
+                    transition: all 1s;
                 }
                 &.size-l{
                     bottom: 0rem;
                     right: 5rem;
                     transform: scale(2);
                     opacity: .2;
+                    transition: all .5s
                 }
                 &.size-m{
                     bottom: 0rem;
                     right: -2rem;
                     transform: scale(1.2);
                     opacity: .2;
+                    transition: all 1.6s;
                 }
             }
-            // & .img-cloud-2{
-            //     bottom: 0;
-            //     width: 500px;
-            //     height: 240px;
-            //     position: absolute;
-            //     background: url('../images/cloud_2.png');
-            //     background-size: cover;
-            //     transition: all .3s;
-            //     &.size-s{
-            //         right: 10rem;
-            //         transform: scale(1);
-            //         opacity: .5;
-            //     }
-            //     &.size-l{
-            //         bottom: 0rem;
-            //         right: 5rem;
-            //         transform: scale(2);
-            //         opacity: .2;
-            //     }
-            //     &.size-m{
-            //         bottom: 0rem;
-            //         right: -2rem;
-            //         transform: scale(1.2);
-            //         opacity: .2;
-            //     }
-            // }
         }
 
 
@@ -374,7 +365,6 @@
             left: -10%;
             width: 700px;
             height: 700px;
-            //background: url('../images/intro_3.png');
             background-size: cover;
         }
 
